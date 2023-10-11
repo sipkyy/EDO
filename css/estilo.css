@@ -1,11 +1,12 @@
-
 body{
     background-image: url('../img/fondo.jpeg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
     margin: 0px; 
+
     font-family: 'M PLUS Rounded 1c', sans-serif;
+
 }
 
 .container {
@@ -21,7 +22,11 @@ body{
     padding: 25px;
     display:grid;
     grid-template-columns: 1fr 3px 1fr;
+
     font-family: 'M PLUS Rounded 1c', sans-serif;
+=======
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     color: rgb(94, 50, 50);
 }
 
