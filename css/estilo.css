@@ -4,6 +4,9 @@ body{
     background-repeat: no-repeat; 
     background-attachment: fixed;
     margin: 0px; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 
     font-family: 'M PLUS Rounded 1c', sans-serif;
 
@@ -116,3 +119,122 @@ body{
     text-align: center;
     text-decoration: underline;
 }
+
+/*footer*/
+
+
+ /*una vez que pasa de los 1200px no se desborda*/
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    padding: 100px 0 50px 0;
+    /* background-color: #3d3d49; */
+}
+
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
+url(../img/paisajeEDO.jpg);
+
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70vh;
+display: flex;
+align-items: center;
+}
+
+.footer-link{
+    display: flex;
+}
+
+.link{
+    width: 300px;
+}
+
+.link h3{
+    font-size: 18px;
+    color: #d6d6e2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a{
+    font-size: 17px;
+    color: #b7b8b7be;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.link a:hover{
+    color: #df7f4f;
+}
+
+.social{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.social a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #df7f4f;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.social a:hover{
+    background-color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background-color: transparent;
+    padding: 14px;
+    outline: none;
+    border: 2px solid #5f5f6e;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #b7b8b7;
+}
+
+:placeholder-shown{
+    color: #b7b8be;
+}
+
+.btn{
+    background-color: #df7f4f;
+    color: #ffffff;
+    border: 0;
+}
+
+.btn:hover{
+    background-color: #e69369;
+}
+
+@media(max-width:768px){
+    .footer{
+        padding: 30px;
+    }
+    .footer-link{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+}
+ /* max-width: 480px para celu*/
