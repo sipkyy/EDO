@@ -7,10 +7,25 @@ body{
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    color: rgb(94, 50, 50);
+    }
 
-}
+    .explicacion_container {
+    display:flex;
+    direction: row;
+    width:100%;
+    }
+
+    .letra {
+        width:90%;
+        margin-left:1em;
+    }
+    .ola {
+        height:60vh;
+        margin-left:3em;
+    }
 
 .container {
     display: flex;
@@ -19,17 +34,23 @@ body{
     min-height: 100vh;
 }
 
+.Tokugawa {
+display:flex;
+
+}
+
+.Tokugawa-img {
+    height:50vh;
+    margin:1em;
+}
+
 .lineatiempo{
     margin: 0 auto;
     max-width: 750px;
     padding: 25px;
     display:grid;
     grid-template-columns: 1fr 3px 1fr;
-
     font-family: 'M PLUS Rounded 1c', sans-serif;
-=======
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
     color: rgb(94, 50, 50);
 }
 
@@ -142,7 +163,7 @@ url(../img/paisajeEDO.jpg);
 background-position: center bottom;
 background-repeat: no-repeat;
 background-size: cover;
-min-height: 70vh;
+min-height: 40vh;
 display: flex;
 align-items: center;
 }
