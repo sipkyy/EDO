@@ -27,7 +27,10 @@ body{
         margin-left:3em;
         filter:sepia(10%);
     }
-
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 .container {
     display: flex;
     justify-content: center;
