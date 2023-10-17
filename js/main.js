@@ -8,10 +8,31 @@ fetch(apiUrl)
     return response.json();
 })
 .then(data => {
-    console.log(data.items);
+    let autorExcluido = 'James Clavell';
+    let librosFiltrados = data.items.filter(item => {
+      let autores = item.volumeInfo.authors || [];
+      return !autores.includes(autorExcluido);
+    });
+
+    console.log(librosFiltrados);
     let datos_api = document.getElementById('contenedor-api');
-    (data.items).forEach(libro => {
-        datos_api.innerHTML += '<li><a href="'+libro.volumeInfo.infoLink+'">'+(libro.volumeInfo.title)+'</a></li>';
+    (librosFiltrados).forEach(libro => {
+        let columna_descripcion = 
+        '<td class="celda">'+
+            '<a target="_blank" href="'+libro.volumeInfo.infoLink+'">'+(libro.volumeInfo.title).toUpperCase()+'</a>'+
+            '<br>'+
+            '◾ Autor: '+libro.volumeInfo.authors.join(", ")+
+            '<br>'+
+            '◾ Fecha de publicación: '+libro.volumeInfo.publishedDate+
+            '<br>'+
+            '◾ Descripción: '+libro.volumeInfo.description+
+        '</td>'; 
+        
+        if (libro.volumeInfo.imageLinks && libro.volumeInfo.imageLinks.smallThumbnail){
+            datos_api.innerHTML += '<tr><td class="celda"><img src="'+libro.volumeInfo.imageLinks.smallThumbnail+'" alt="'+libro.volumeInfo.title+'"></td>'+columna_descripcion+'</tr>';
+        }else{
+            datos_api.innerHTML += '<tr><td class="celda"><img src="./img/Mitsubaaoi.svg.png" width="120" alt="'+libro.volumeInfo.title+'"></td>'+columna_descripcion+'</tr>';
+        }
     });
 
 })

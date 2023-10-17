@@ -48,6 +48,20 @@ display:flex;
     margin:1em;
 }
 
+#contenedor-api{
+    border: 1px solid black;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#contenedor-api a{
+    color: rgb(36, 36, 150);
+}
+
+#contenedor-api .celda{
+    border: 1px solid black
+}
+
 /*CONTENEDORES INFO*/
 .informacion1{
     display: none;
