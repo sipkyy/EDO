@@ -25,6 +25,7 @@ body{
     .ola {
         height:60vh;
         margin-left:3em;
+        filter:sepia(10%);
     }
 
 .container {
@@ -34,7 +35,7 @@ body{
     min-height: 100vh;
 }
 
-.Tokugawa {
+.Tokugawa-flex {
 display:flex;
 
 }
@@ -43,6 +44,230 @@ display:flex;
     height:50vh;
     margin:1em;
 }
+
+/*CONTENEDORES INFO*/
+.informacion1{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+    margin-bottom:20em;
+
+}
+
+.informacion2{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+    margin-bottom:20em;
+
+}
+.informacion3{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion4{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion5{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion6{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion7{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion8{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion9{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+   
+}
+.informacion10{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion11{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion12{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+ 
+}
+.informacion13{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion14{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+
+}
+.informacion15{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    z-index: 1;
+    margin-left:16em;
+ 
+}
+
+
+.Descripcion_guia {
+    margin-top:3.5em;
+}
+
+.Tokugawa1:hover .informacion1 {
+    display: block;
+}
+
+
+.Tokugawa2:hover .informacion2 {
+    display: block;
+}
+.Tokugawa3:hover .informacion3 {
+    display: block;
+}
+.Tokugawa4:hover .informacion4 {
+    display: block;
+}
+.Tokugawa5:hover .informacion5 {
+    display: block;
+}
+.Tokugawa6:hover .informacion6 {
+    display: block;
+}
+.Tokugawa7:hover .informacion7 {
+    display: block;
+}
+.Tokugawa8:hover .informacion8 {
+    display: block;
+}
+.Tokugawa9:hover .informacion9 {
+    display: block;
+}
+.Tokugawa10:hover .informacion10 {
+    display: block;
+}
+.Tokugawa11:hover .informacion11 {
+    display: block;
+}
+.Tokugawa12:hover .informacion12 {
+    display: block;
+}
+.Tokugawa13:hover .informacion13 {
+    display: block;
+}
+.Tokugawa14:hover .informacion14 {
+    display: block;
+}
+.Tokugawa15:hover .informacion15 {
+    display: block;
+}
+/*CONTENEDORES INFO*/
 
 .lineatiempo{
     margin: 0 auto;
