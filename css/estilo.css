@@ -383,6 +383,33 @@ display:flex;
     text-decoration: underline;
 }
 
+.incendio1 {
+    display: flex;
+    gap:10px;
+}
+
+.Primer_periodo-imagen{
+position:absolute;
+top:15em;
+left:35em;
+filter: sepia(30%);
+}
+
+.Primer_periodo {
+    width:51%;
+}
+
+
+.dibujo1 {
+    width:30vw;
+}
+.dibujo2 {
+    width:31vw;
+}
+.dibujo3 {
+    width: 62vw;
+}
+
 /*footer*/
 
 
