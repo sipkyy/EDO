@@ -448,16 +448,21 @@ display: inline-block;
     gap:10px;
 }
 
-.Primer_periodo-imagen{
-position:absolute;
-top:15em;
-left:35em;
-filter: sepia(30%);
+.Primer_periodo-imagen {
+    float: right;
+    margin-right: 20px; 
+    width: 400px;
 }
 
-.Primer_periodo {
-    width:51%;
+.Primer_periodo{
+    width: 100%;
 }
+
+
+p {
+    overflow: hidden; 
+}
+
 
 
 .dibujo1 {
@@ -480,14 +485,13 @@ filter: sepia(30%);
 
 .imagen_ronin {
     float: left;
-    margin-right: 20px; /* Ajusta este valor según tus necesidades para el espacio entre la imagen y el texto */
-    width: 400px; /* Ajusta el ancho de la imagen según tus necesidades */
+    margin-right: 20px; 
+    width: 400px;
 }
 
 p {
-    overflow: hidden; /* Evita que el texto flote alrededor de la imagen */
+    overflow: hidden; 
 }
-Con este código, la imagen flotará a la izquierda del texto, y el texto ocupará el espacio restante en la derecha. Puedes ajustar el ancho y los márgenes según tus preferencias.
 
 
 
@@ -504,7 +508,6 @@ Con este código, la imagen flotará a la izquierda del texto, y el texto ocupar
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .footer{
     padding: 100px 0 50px 0;
     /* background-color: #3d3d49; */
@@ -520,7 +523,9 @@ background-repeat: no-repeat;
 background-size: cover;
 min-height: 40vh;
 display: flex;
+justify-content: center;
 align-items: center;
+flex-direction: center;
 }
 
 .footer-link{
