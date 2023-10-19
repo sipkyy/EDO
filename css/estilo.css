@@ -31,6 +31,16 @@ body{
         margin-left:3em;
         filter:sepia(10%);
     }
+    .Primer_periodo-imagen {
+    float: right;
+    margin-right: 20px; 
+    width: 400px;
+}
+
+.Primer_periodo{
+    width: 100%;
+}
+
 main{
     margin-left: 100px;
     margin-right: 100px;
@@ -333,18 +343,21 @@ display:flex;
 
 .palabraClave:hover .resultadoClave  {
     display: inline-block;
-
 }
+
 
 .palabraClave:hover .resultadoClaveimg  {
     display: inline-block;
+
+}
+.palabraClave:hover .resultadoClaveimg1  {
+    display: inline-block;
+
 }
 
 .palabraClave {
 display: inline-block;
 }
-
-
 
 .lineatiempo{
     margin: 0 auto;
@@ -434,6 +447,7 @@ display: inline-block;
 }
 .enlace:hover{
     color:#fdfdf7;
+    transition: 0.5s;
 }
 .enlace:active{
     color: #ffffff;
@@ -462,8 +476,20 @@ display: inline-block;
 p {
     overflow: hidden; 
 }
+.siguiente {
+    display:inline;
+}
 
+.Ultimo_periodo-imagen {
+    float: right;
+    margin-right: 20px; 
+    width: 600px;
+}
 
+.Ultimo_periodo{
+    width: 100%;
+    display:inline-block;
+}
 
 .dibujo1 {
     width:30vw;
@@ -526,6 +552,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: center;
+margin-top:3em;
 }
 
 .footer-link{
@@ -552,6 +579,7 @@ flex-direction: center;
 
 .link a:hover{
     color: #df7f4f;
+      transition: 0.5s;
 }
 
 .social{
