@@ -333,7 +333,7 @@ display:flex;
 
 .palabraClave:hover .resultadoClave  {
     display: inline-block;
-    
+
 }
 
 .palabraClave:hover .resultadoClaveimg  {
@@ -468,6 +468,32 @@ filter: sepia(30%);
 }
 .dibujo3 {
     width: 62vw;
+}
+
+.leyenda {
+    margin:6em;
+}
+
+.contenedor_ronin {
+    width: 100%;
+}
+
+.imagen_ronin {
+    float: left;
+    margin-right: 20px; /* Ajusta este valor según tus necesidades para el espacio entre la imagen y el texto */
+    width: 400px; /* Ajusta el ancho de la imagen según tus necesidades */
+}
+
+p {
+    overflow: hidden; /* Evita que el texto flote alrededor de la imagen */
+}
+Con este código, la imagen flotará a la izquierda del texto, y el texto ocupará el espacio restante en la derecha. Puedes ajustar el ancho y los márgenes según tus preferencias.
+
+
+
+
+
+
 }
 
 /*footer*/
