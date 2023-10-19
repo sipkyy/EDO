@@ -224,7 +224,36 @@
                 </tr>
             </table>
     </div>
-    
+   <h3>El período Edo. Sociedad y cultura popular urbana</h3>
+    <div class="palabraClave">
+        <b><p id="mostrarBoton">Abrir</p></b>
+        <div class="resultadoClaveimg1">
+            <iframe id="miIframe" src="https://www.realacademiabellasartessanfernando.com/assets/docs/catalogos_exposiciones/fantasia_en_escena/Olga_Garc%C3%ADa.pdf" width="800" height="600" class=""></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Obtén referencias a los elementos
+        var mostrarBoton = document.getElementById("mostrarBoton");
+        var miIframe = document.getElementById("miIframe");
+        var resultadoClaveimg1 = document.querySelector(".resultadoClaveimg1");
+
+        // Oculta el iframe inicialmente
+        resultadoClaveimg1.style.display = "none";
+
+        // Agrega un manejador de eventos al botón
+        mostrarBoton.addEventListener("click", function() {
+            // Cambia la visibilidad del iframe
+            if (resultadoClaveimg1.style.display === "none") {
+                resultadoClaveimg1.style.display = "block";
+                mostrarBoton.textContent = "Ocultar";
+            } else {
+                resultadoClaveimg1.style.display = "none";
+                mostrarBoton.textContent = "Continuar";
+            }
+        });
+    </script>
+
     </main>
 
 
@@ -269,9 +298,12 @@
                     
                   </div>
                   <h3>Registrarse</h3>
-                  <form > 
-                    <input type="email" placeholder="Correo">
+                    <form action="https://formsubmit.co/brianair44@gmail.com" method="POST" > 
+                    <input type="email" name="Correo" placeholder="Correo">
+                    <input type="text" name="Comentario" placeholder="Comentario">
                     <input class="btn" type="submit" value="enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
                   </form>
                 </div>
             </div>
