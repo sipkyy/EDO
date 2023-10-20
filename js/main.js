@@ -29,7 +29,7 @@ fetch(apiUrl)
         '</td>'; 
         
         if (libro.volumeInfo.imageLinks && libro.volumeInfo.imageLinks.smallThumbnail){
-            datos_api.innerHTML += '<tr><td class="celda"><img src="'+libro.volumeInfo.imageLinks.smallThumbnail+'" alt="'+libro.volumeInfo.title+'"></td>'+columna_descripcion+'</tr>';
+            datos_api.innerHTML += '<tr><td class="celda"><img src="'+libro.volumeInfo.imageLinks.smallThumbnail+'" width="120" alt="'+libro.volumeInfo.title+'"></td>'+columna_descripcion+'</tr>';
         }else{
             datos_api.innerHTML += '<tr><td class="celda"><img src="./img/Mitsubaaoi.svg.png" width="120" alt="'+libro.volumeInfo.title+'"></td>'+columna_descripcion+'</tr>';
         }
