@@ -429,6 +429,19 @@ input{
 .btn:hover{
     background-color: #e69369;
 }
+.iframe {
+    width:50em;
+    height: 50em;
+}
+
+.normal_li {
+    display: list-item;
+}
+
+.responsive_li {
+    display: none;
+}
+
 
 @media(max-width:768px){
     .footer{
@@ -467,14 +480,19 @@ body{
     letter-spacing: 1px;
     }
 
+    .p_especial {
+        padding-left:.6em;
+    }
+
+
     .explicacion_container {
     display:block;
     width:100%;
     }
 
-
     .titulo-style {
         background-color: rgb(0, 0, 0, 0.1);
+
            }
     .letra {
         width:90%;
@@ -487,9 +505,9 @@ body{
         filter:sepia(10%);
     }
     .Primer_periodo-imagen {
-    float: right;
-    margin-right: 20px; 
-    width: 400px;
+    width: 17em;
+    margin-bottom:1em;
+    
 }
 
 .Primer_periodo{
@@ -668,22 +686,40 @@ display: inline-block;
     
 }
 
-#navegacion{
+#navegacion {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin: 0px;
+    margin: 0;
     padding: 10px;
-    color:#ffffff;
+    color: #ffffff;
     text-align: left;
-    
     display: flex;
     align-items: center;
 }
 
+.colored-text {
+    color: rgb(94, 50, 50); 
+}
+
+.salto {
+    white-space: normal;
+     color: rgb(94, 50, 50)
+   
+}
+    .menu-container {
+    white-space:nowrap;
+
+}
+
+.cresta {
+    position: relative;
+    right:.3em;
+}
+
 .enlace{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0;
+    margin-left: 0;
     text-decoration: none;
     color:rgb(94, 50, 50);
     font-size: 20px;
@@ -709,17 +745,6 @@ display: inline-block;
     gap:10px;
 }
 
-.Primer_periodo-imagen {
-    float: right;
-    margin-right: 20px; 
-    width: 400px;
-}
-
-.Primer_periodo{
-    width: 100%;
-}
-
-
 p {
     overflow: hidden; 
 }
@@ -727,15 +752,18 @@ p {
     display:inline;
 }
 
-.Ultimo_periodo-imagen {
-    float: right;
-    margin-right: 20px; 
-    width: 600px;
-}
 
 .Ultimo_periodo{
     width: 100%;
     display:inline-block;
+}
+
+.Ultimo_periodo-imagen {
+    float: none;
+    width: 17em;
+    padding-right:.7em;
+    display: block;
+  
 }
 
 .dibujo1 {
@@ -776,16 +804,17 @@ p {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .footer{
-    padding: 100px 0 50px 0;
+  
     /* background-color: #3d3d49; */
 }
 
 .footer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+padding: 100px 0 50px 0;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)),
 url(../img/paisajeEDO.jpg);
-
 background-position: center bottom;
 background-repeat: no-repeat;
 background-size: cover;
@@ -795,6 +824,7 @@ justify-content: center;
 align-items: center;
 flex-direction: center;
 margin-top:3em;
+
 }
 
 .footer-link{
@@ -875,3 +905,17 @@ input{
     background-color: #e69369;
 }
 
+.iframe {
+    width:18em;
+    height: 18em;
+}
+
+.responsive_li {
+    display: list-item;
+}
+.normal_li {
+    display:none;
+}
+h2, h3 {
+    padding-left:1em;
+}
