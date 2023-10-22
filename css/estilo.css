@@ -439,14 +439,28 @@ input{
     line-height: 1.5;
 }
 
- /* tablets */
+@media(max-width:768px){
+    .footer{
+        padding: 30px;
+    }
+    .footer-link{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+}
+
+ /* tablets 
 @media (max-width: 768px) {
     .lineatiempo{
         font-size: .6em;
     }
 }
 
- /* notebook */
+ notebook 
 @media (max-width: 992px) {
     .footer{
         padding: 30px;
@@ -461,7 +475,7 @@ input{
     }
 }
 
- /* escritorio */
+  escritorio 
  @media (max-width: 1300px) {
 
     .Ultimo_periodo{
@@ -475,229 +489,56 @@ input{
         width: 70%;
     }
 }
-
+*/
 
 
  /*Media queries */
  /* telefono*/
- @media (max-width: 576px) {
-    body{
-        background-image: url('../img/fondo.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        margin: 0px;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-        font-family: 'M PLUS Rounded 1c', sans-serif;
-        font-size: 1.4em;
-        color: rgb(94, 50, 50);
-        letter-spacing: 1px;
-        }
-
-        .explicacion_container {
-        display:block;
-        width:100%;
-        }
+ /* max-width: 480px para celu*/
 
 
-        .titulo-style {
-            background-color: rgb(0, 0, 0, 0.1);
-            }
-        .letra {
-            width:90%;
-            margin-left:1em;
-        }
-        .Primer_periodo-imagen {
-        float: right;
-        margin-right: 20px;
-        width: 400px;
+
+
+ /*Media queries */
+ /*Celulares */
+@media screen and (max-width: 767px) {
+
+body{
+    background-image: url('../img/fondo.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    margin: 0px; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.4em;
+    color: rgb(94, 50, 50);
+    letter-spacing: 1px;
     }
-    .p_especial {
-        padding-left:.6em;
-    }
-
 
     .explicacion_container {
     display:block;
     width:100%;
     }
-
     .titulo-style {
         background-color: rgb(0, 0, 0, 0.1);
-
            }
     .letra {
         width:90%;
         margin-left:1em;
     }
-    
-    .Primer_periodo{
-        width: 100%;
+    .ola {
+        height:100vh;
+        width:90vw;
+        margin-left:1em;
+        filter:sepia(10%);
     }
-
-    main{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-
-
-    .Tokugawa-flex {
-    display:flex;
-
-
-    }
-
-    .Tokugawa-img {
-        height:50vh;
-        margin:1em;
-    }
-
-    #contenedor-api{
-        border: 1px solid black;
-        margin-bottom: 50px;
-        background: rgba(255, 255, 255, 0.2);
-    }
-
-    #contenedor-api a{
-        color: rgb(36, 36, 150);
-    }
-
-    #contenedor-api .celda{
-        border: 1px solid black
-    }
-
-    /*CONTENEDORES INFO*/
-    .informacion1{
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        padding: 10px;
-        border: 1px solid #000;
-        width: 500px;
-        z-index: 1;
-        margin-left:18em;
-        margin-bottom:20em;
-    }
-
-
-    .Tokugawa1:hover .informacion1 {
-        display: block;
-    }
-
-    /*CONTENEDORES INFO*/
-
-    .resultadoClave {
-        display: none;
-        position: absolute;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        padding: 10px;
-        border: 1px solid #000;
-        max-width: 300px;
-        min-height: 1px;
-        max-height: 300px;
-        z-index: 1;
-        overflow: auto;
-    }
-
-    .resultadoClaveimg {
-        display: none;
-        position: absolute;
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        padding: 10px;
-        border: 1px solid #000;
-        max-width: 800px;
-        max-height: 800px;
-        z-index: 1;
-    }
-
-    .resultadoClaveimg img {
-
-        max-width: 800px;
-        max-height: 800px;
-
-    }
-
-
-    .palabraClave:hover .resultadoClave  {
-        display: inline-block;
-    }
-
-
-    .palabraClave:hover .resultadoClaveimg  {
-        display: inline-block;
-
-    }
-    .palabraClave:hover .resultadoClaveimg1  {
-        display: inline-block;
-
-    }
-
-    .palabraClave {
-    display: inline-block;
-    }
-
-    .carousel{
-        text-align: center;
-
-    }
-
-    #navegacion{
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        margin: 0px;
-        padding: 10px;
-        color:#ffffff;
-        text-align: left;
-
-        display: flex;
-        align-items: center;
-    }
-
-    .enlace{
-        margin-right: 10px;
-        margin-left: 10px;
-        text-decoration: none;
-        color:rgb(94, 50, 50);
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .enlace:link{
-        color:#0a0a0a;
-    }
-    .enlace:hover{
-        color:#fdfdf7;
-        transition: 0.5s;
-    }
-    .enlace:active{
-        color: #ffffff;
-    }
-    .titulo{
-        text-align: center;
-        text-decoration: underline;
-    }
-
-    .incendio1 {
-        display: flex;
-        gap:10px;
-    }
-
-    .Primer_periodo-imagen { 
-    width: 17em;
+    .Primer_periodo-imagen {
+        margin-right: 20px; 
+    width: 15em;
     margin-bottom:1em;
-    
 }
 
 .Primer_periodo{
@@ -715,10 +556,17 @@ main{
     min-height: 100vh;
 }
 
+.excepcion {
+    width:90%;
+}
 
 .Tokugawa-flex {
 display:flex;
 
+}
+
+.main_container {
+ width:90%;   
 }
 
 .Tokugawa-img {
@@ -789,7 +637,7 @@ display:flex;
 }
 
 .resultadoClaveimg img {
-  
+
     max-width: 800px;
     max-height: 800px;   
 
@@ -873,43 +721,25 @@ display: inline-block;
 
 .carousel{
     text-align: center;
-    
+
 }
 
-#navegacion {
+#navegacion{
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin: 0;
+    margin: 0px;
     padding: 10px;
-    color: #ffffff;
+    color:#ffffff;
     text-align: left;
+
     display: flex;
     align-items: center;
 }
 
-.colored-text {
-    color: rgb(94, 50, 50); 
-}
-
-.salto {
-    white-space: normal;
-     color: rgb(94, 50, 50)
-   
-}
-    .menu-container {
-    white-space:nowrap;
-
-}
-
-.cresta {
-    position: relative;
-    right:.3em;
-}
-
 .enlace{
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
     text-decoration: none;
     color:rgb(94, 50, 50);
     font-size: 20px;
@@ -935,25 +765,26 @@ display: inline-block;
     gap:10px;
 }
 
-p {
-    overflow: hidden; 
+
+
+.Primer_periodo{
+    width: 100%;
 }
+
+
 .siguiente {
     display:inline;
 }
 
+.Ultimo_periodo-imagen {
+    float: right;
+    margin-right: 20px; 
+    width: 600px;
+}
 
 .Ultimo_periodo{
     width: 100%;
     display:inline-block;
-}
-
-.Ultimo_periodo-imagen {
-    float: none;
-    width: 17em;
-    padding-right:.7em;
-    display: block;
-  
 }
 
 .dibujo1 {
@@ -994,17 +825,16 @@ p {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .footer{
-  
+    padding: 100px 0 50px 0;
     /* background-color: #3d3d49; */
 }
 
 .footer{
-padding: 100px 0 50px 0;
-background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)),
 url(../img/paisajeEDO.jpg);
+
 background-position: center bottom;
 background-repeat: no-repeat;
 background-size: cover;
@@ -1014,7 +844,6 @@ justify-content: center;
 align-items: center;
 flex-direction: center;
 margin-top:3em;
-
 }
 
 .footer-link{
@@ -1089,6 +918,7 @@ input{
     background-color: #df7f4f;
     color: #ffffff;
     border: 0;
+    margin-left:1em;
 }
 
 .btn:hover{
@@ -1096,170 +926,15 @@ input{
 }
 
 .iframe {
-    width:18em;
-    height: 18em;
+    width:17em;
+    height: 17em;
+    padding-left:.7em;
 }
 
-.responsive_li {
-    display: list-item;
+.p_especial {
+    padding-left:.7em;
 }
-.normal_li {
-    display:none;
-}
-h2, h3 {
-    padding-left:1em;
-        float: right;
-        margin-right: 20px;
-        width: 400px;
-    }
 
-    .Primer_periodo{
-        width: 100%;
-    }
-
-
-    p {
-        overflow: hidden;
-    }
-    .siguiente {
-        display:inline;
-    }
-
-    .dibujo1 {
-        width:30vw;
-    }
-    .dibujo2 {
-        width:31vw;
-    }
-    .dibujo3 {
-        width: 62vw;
-    }
-
-    .leyenda {
-        margin:6em;
-    }
-
-    .contenedor_ronin {
-        width: 100%;
-    }
-
-    .imagen_ronin {
-        float: left;
-        margin-right: 20px;
-        width: 400px;
-    }
-
-    p {
-        overflow: hidden;
-    }
-
-
-
-    /*footer*/
-
-
-    /*una vez que pasa de los 1200px no se desborda*/
-    .container-footer{
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .footer{
-        padding: 100px 0 50px 0;
-        /* background-color: #3d3d49; */
-    }
-
-    .footer{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)),
-        url(../img/paisajeEDO.jpg);
-
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 40vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: center;
-        margin-top:3em;
-    }
-
-    .footer-link{
-        display: flex;
-    }
-
-    .link{
-        width: 300px;
-    }
-
-    .link h3{
-        font-size: 18px;
-        color: #d6d6e2;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-
-    .link a{
-        font-size: 17px;
-        color: #b7b8b7be;
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .link a:hover{
-        color: #df7f4f;
-        transition: 0.5s;
-    }
-
-    .social{
-        display: flex;
-        margin-bottom: 15px;
-    }
-
-    .social a{
-        display: inline-block;
-        min-height: 40px;
-        width: 40px;
-        background-color: #df7f4f;
-        margin: 0 15px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #ffffff;
-        font-size: 20px;
-    }
-
-    .social a:hover{
-        background-color: #ffffff;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    input{
-        background-color: transparent;
-        padding: 14px;
-        outline: none;
-        border: 2px solid #5f5f6e;
-        font-size: 17px;
-        margin-bottom: 15px;
-        color: #b7b8b7;
-    }
-
-    :placeholder-shown{
-        color: #b7b8be;
-    }
-
-    .btn{
-        background-color: #df7f4f;
-        color: #ffffff;
-        border: 0;
-    }
-
-    .btn:hover{
-        background-color: #e69369;
-    }
-
+h2, h3{
+padding-left:.7em;
 }
