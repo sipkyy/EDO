@@ -1435,7 +1435,7 @@ h1 {
 }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 300px) {
 
     body{
     background-image: url('../img/fondo.jpeg'); 
@@ -1465,8 +1465,7 @@ h1 {
     }
     .ola {
         height:90vh;
-        width:90vw;
-        margin-right:3em;
+        max-width:250px;
         filter:sepia(10%);
         position: relative;
         right:.4em;
@@ -1475,11 +1474,7 @@ h1 {
     margin-bottom:1em;
     margin-left:.4em;
     float:none;
-    max-width:92vw;
-}
-
-.Primer_periodo{
-    width: 100%;
+    max-width:240px;
 }
 
 main{
@@ -1601,9 +1596,10 @@ display: inline-block;
 
 .lineatiempo{
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 250px;
     padding: 25px;
-    display:grid;
+    display:flex;
+    flex-direction: column;
     grid-template-columns: 1fr 3px 1fr;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: rgb(94, 50, 50);
@@ -1611,8 +1607,9 @@ display: inline-block;
 
 .lineatiempo__component{
     margin: 0 20px 20px 20px;
+
 }
-.lineatiempo__component--bg{
+.lineatiempo__component--bg {
     padding: 1.5em;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -1620,11 +1617,16 @@ display: inline-block;
 }
 
 .lineatiempo__component--bg{
-    margin-bottom: 50;
+    margin-bottom: 0;
 }
 
 .lineatiempo__fecha--right{
-    text-align: right;
+    text-align: center;
+ 
+}
+
+.lineatiempo__fecha {
+
 }
 .lineatiempo__middle{
     position: relative;
@@ -1653,7 +1655,7 @@ display: inline-block;
     font-weight: bold;
 }
 .lineatiempo__parrafo{
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .carousel{
@@ -1740,12 +1742,14 @@ display: inline-block;
     padding-left:.6em;
     display: block;
     margin-bottom:1.2em;
-    max-width:80vw !important;
+    margin-left:none;
+    margin-right: none;
+ 
 
 }
 
 .Ultimo_periodo{
-    width: 100%;
+    max-width: 240px;
     display:inline-block;
 }
 
@@ -1764,7 +1768,7 @@ display: inline-block;
 .imagen_ronin {
     float: none;
     margin-left:.7em; 
-    width: 90vw;
+    max-width: 240px;
 }
 
 p {
@@ -1806,7 +1810,8 @@ margin-top:3em;
 }
 
 .link{
-    width: 300px;
+  
+    max-width:250px
 }
 
 .link h3{
@@ -1881,8 +1886,8 @@ input{
 }
 
 .iframe {
-    width:17em;
-    height: 17em;
+    width:11em;
+    height:11em;
     padding-left:.7em;
 }
 
@@ -1920,8 +1925,45 @@ h1 {
     .colored-text , .salto {
         font-size:.9em;
     }
+
 .Texto_responsivo {
     display:none;
 }
+
+ .footer {
+ padding: 12px;
+ }
+
+.footer-link {
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ }
+
+ .link a {
+
+ display: block;
+ margin-bottom: 10px;
+}
+
+.social {
+justify-content: center;
+}
+
+.Correo {
+ max-width: 235px;
+ margin-left:.6em;
+ 
+
+ }
+
+ .Comentario {
+ max-width: 235px;
+ margin-left:.6em;
+ }
+
+ .btn {
+ max-width: 100px;
+ }
 
 }
