@@ -438,6 +438,121 @@ input{
 }
 
 
+ .hola {
+    z-index:1000;
+    position: absolute;
+    top:5rem;
+    left: 15rem;
+    font-size: 3rem;
+    color:white;
+
+ }
+
+ /* Deja establecido el ancho y alto que va a tener el carousel  */
+.carousel {
+    position: relative;
+    height: 500px;
+    width: 80%;
+    margin: 10px auto; 
+    max-height: 852px;
+    max-width: 90%;
+} 
+ /* Establece que las imagenes tengan el ancho y alto de su elemento padre */
+ /* Tambien establece que la imagen mantenga su aspecto ratio  */
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+ /* Mentiene la images que esten adentro del contenedor siempre tengan la altura de su elemento padre  */
+ /* y que las imagenes no se salgan del contenedor  */
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/* Mantiene la altura de su contenedor ,tener un margen y relleno 0 para centrar las imagenes */
+/* Que su clase li no tenga ningun estilo y que tenga animacion cuando haya un cambio de imagen */
+.carousel_track {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    transition: transform 250ms ease-in;
+
+}
+/* Que todos los elementos con la clase carousel-slide tengan una posicion en lo alto de la pantalla */
+/* Y que sigan el ancho de su elemento padre */
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* Determina la posicion del eje Y de las flechas en el carousel, que no tengan color de fondo, sin bordes */
+/* Y que cuando se pase el cursor por arriba se transforme en la manito */
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+/* Determina la posicion de la flecha derecha con respecto al carousel */
+.carousel__button--right{
+    right: -40px
+}
+/* Determina la posicion de la flecha izquierda con respecto al carousel */
+.carousel__button--left{
+    left: -40px
+}
+/* Determina el ancho de las flechas */
+.carousel_button img {
+    width: 30px;
+}
+/* Determina que los botones del navegador esten centrados con respecto al carousel y que tengan una separacion establecida */
+.carousel_nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    
+}
+/* Determina la forma que van a tener los botones del navegador su altura y ancho, ademas de que sean redondos */
+/* Que tengan un color gris y que cuando se pase el mouse por arriba muestre la manito */
+.carousel-indicators {
+border: 0;
+border-radius: 50%;
+width: 15px;
+height: 15px;
+background: rgb(0, 0, 0,.3);
+margin: 0 12px;
+cursor: pointer;
+}
+/* Esto determina que el boton que este la imagen que este mostrando en el momento cambie de color a uno mas negro */
+.carousel-indicators.current-slide{
+background: rgba(0, 0, 0,0.75)
+}
+/* Esto determina que la flecha derecha o izquierda dependiendo de si es la primera imagen o la ultima */
+/* No las muestre respectivamente */
+.is-hidden {
+    display: none;
+}
+.miyamoto{
+    object-position: bottom right;
+}
+.btn_carrousel{
+    position: relative;
+    background-color: steelblue;
+    font-size: 20px;
+    border-radius: 5px;
+        
+}
+
 @media(max-width:768px){
     .footer{
         padding: 30px;
@@ -450,6 +565,7 @@ input{
     .social{
         justify-content: center;
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -897,6 +1013,121 @@ input{
 }
 .Primer_periodo , .Primer_periodo-2 {
     display:none;
+}
+
+ .hola {
+    z-index:1000;
+    position: absolute;
+    top:5rem;
+    left: 9rem;
+    font-size: 2rem;
+    color:white;
+
+ }
+
+ /* Deja establecido el ancho y alto que va a tener el carousel  */
+.carousel {
+    position: relative;
+    height: 500px;
+    width: 80%;
+    margin: 10px auto; 
+    max-height: 852px;
+    max-width: 90%;
+} 
+ /* Establece que las imagenes tengan el ancho y alto de su elemento padre */
+ /* Tambien establece que la imagen mantenga su aspecto ratio  */
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+ /* Mentiene la images que esten adentro del contenedor siempre tengan la altura de su elemento padre  */
+ /* y que las imagenes no se salgan del contenedor  */
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/* Mantiene la altura de su contenedor ,tener un margen y relleno 0 para centrar las imagenes */
+/* Que su clase li no tenga ningun estilo y que tenga animacion cuando haya un cambio de imagen */
+.carousel_track {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    transition: transform 250ms ease-in;
+
+}
+/* Que todos los elementos con la clase carousel-slide tengan una posicion en lo alto de la pantalla */
+/* Y que sigan el ancho de su elemento padre */
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* Determina la posicion del eje Y de las flechas en el carousel, que no tengan color de fondo, sin bordes */
+/* Y que cuando se pase el cursor por arriba se transforme en la manito */
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+/* Determina la posicion de la flecha derecha con respecto al carousel */
+.carousel__button--right{
+    right: -40px
+}
+/* Determina la posicion de la flecha izquierda con respecto al carousel */
+.carousel__button--left{
+    left: -40px
+}
+/* Determina el ancho de las flechas */
+.carousel_button img {
+    width: 30px;
+}
+/* Determina que los botones del navegador esten centrados con respecto al carousel y que tengan una separacion establecida */
+.carousel_nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    
+}
+/* Determina la forma que van a tener los botones del navegador su altura y ancho, ademas de que sean redondos */
+/* Que tengan un color gris y que cuando se pase el mouse por arriba muestre la manito */
+.carousel-indicators {
+border: 0;
+border-radius: 50%;
+width: 15px;
+height: 15px;
+background: rgb(0, 0, 0,.3);
+margin: 0 12px;
+cursor: pointer;
+}
+/* Esto determina que el boton que este la imagen que este mostrando en el momento cambie de color a uno mas negro */
+.carousel-indicators.current-slide{
+background: rgba(0, 0, 0,0.75)
+}
+/* Esto determina que la flecha derecha o izquierda dependiendo de si es la primera imagen o la ultima */
+/* No las muestre respectivamente */
+.is-hidden {
+    display: none;
+}
+.miyamoto{
+    object-position: bottom right;
+}
+.btn_carrousel{
+    position: relative;
+    background-color: steelblue;
+    font-size: 20px;
+    border-radius: 5px;
+        
 }
 
 }
@@ -1432,6 +1663,9 @@ h1 {
     }
 .Texto_responsivo {
     display:none;
+}
+.carousel {
+    display: none;
 }
 }
 
